@@ -7,7 +7,7 @@
         <meta name="author" content="Angel Pablos">
         <title>Titulo</title>
     </head>
-    <body>
+    <body onload="saludo()">
         <h1>Prueba</h1>
         <p>Texto de prueba</p>
     </body>
@@ -16,4 +16,13 @@
         h1 {color: red;}
         p {color: blue;}
     </style>
+    <script>
+        function saludo() {
+            alert("Bienvenido")
+        }
+
+        function cambiaColor() {
+            document.getElementById("titulo").style.color = "darkgreen";
+        }
+    </script>
 </html>
