@@ -26,8 +26,7 @@
             <br>
 
             <label for="ingredientes">Ingredientes: </label>
-            <select name="ingredientes">
-                <option value=""></option>
+            <select multiple style="height: 150px" name="ingredientes">
                 <optgroup label="Carne">
                     <option value="pollo">Pollo</option>
                     <option value="ternera">Ternera</option>
@@ -58,6 +57,12 @@
             <input name="minutos" type="radio" value="15m"> 15m
             <input name="minutos" type="radio" value="30m"> 30m
             <input name="minutos" type="radio" value="45m"> 45m
+            <br>
+
+            <label for="foto">Foto: </label>
+            <br>
+            <input type="file" name="foto"/>
+            <br> 
             <br>
 
             <button type="submit">Enviar</button>
