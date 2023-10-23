@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="miestilo.css">
 </head>
 <body>
-    <form action="https://www.w3schools.com/action_page.php" method="post">
+    <form action="https://lm.ciclo.iesnervion.es/" method="post">
         <fieldset>
             <label for="nombre">Nombre</label>
             <input type="text" name="nombre">
@@ -18,15 +18,15 @@
             <br>
             
             <label for="momento">Momento: </label>
-            <input name="momento" type="checkbox" value="desayuno"> Desayuno
-            <input name="momento" type="checkbox" value="almuerzo"> Almuerzo
-            <input name="momento" type="checkbox" value="merienda"> Merienda
-            <input name="momento" type="checkbox" value="cena"> Cena
-            <input name="momento" type="checkbox" value="postre"> Postre
+            <input name="momento[]" type="checkbox" value="desayuno"> Desayuno
+            <input name="momento[]" type="checkbox" value="almuerzo"> Almuerzo
+            <input name="momento[]" type="checkbox" value="merienda"> Merienda
+            <input name="momento[]" type="checkbox" value="cena"> Cena
+            <input name="momento[]" type="checkbox" value="postre"> Postre
             <br>
 
             <label for="ingredientes">Ingredientes: </label>
-            <select multiple style="height: 150px" name="ingredientes">
+            <select multiple style="height: 150px" name="ingredientes[]">
                 <optgroup label="Carne">
                     <option value="pollo">Pollo</option>
                     <option value="ternera">Ternera</option>
@@ -47,19 +47,19 @@
             <br>
 
             <label for="horas">Horas: </label>
-            <input name="horas" type="radio" value="0h"> 0h
-            <input name="horas" type="radio" value="1h"> 1h
-            <input name="horas" type="radio" value="2h"> 2h
+            <input name="horas" type="radio" value="0"> 0h
+            <input name="horas" type="radio" value="1"> 1h
+            <input name="horas" type="radio" value="2"> 2h
             <br>
 
             <label for="minutos">Minutos: </label>
-            <input name="minutos" type="radio" value="0m"> 0m
-            <input name="minutos" type="radio" value="15m"> 15m
-            <input name="minutos" type="radio" value="30m"> 30m
-            <input name="minutos" type="radio" value="45m"> 45m
+            <input name="minutos" type="radio" value="0"> 0m
+            <input name="minutos" type="radio" value="15"> 15m
+            <input name="minutos" type="radio" value="30"> 30m
+            <input name="minutos" type="radio" value="45"> 45m
             <br>
 
-            <label for="foto">Foto: </label>
+            <label for="foto">Foto (opcional): </label>
             <br>
             <input type="file" name="foto"/>
             <br> 
