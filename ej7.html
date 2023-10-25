@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Angel Pablos">
+    <title>Ejercicio 7</title>
+    <link rel="stylesheet" href="miestilo.css">
+</head>
+<body>
+    <form action="https://lm.ciclo.iesnervion.es/" method="post">
+        <fieldset>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre">
+            <br>
+
+            <label for="correo">Correo</label>
+            <input type="text" name="correo">
+            <br>
+            
+            <label for="momento">Momento: </label>
+            <input name="momento[]" type="checkbox" value="desayuno"> Desayuno
+            <input name="momento[]" type="checkbox" value="almuerzo"> Almuerzo
+            <input name="momento[]" type="checkbox" value="merienda"> Merienda
+            <input name="momento[]" type="checkbox" value="cena"> Cena
+            <input name="momento[]" type="checkbox" value="postre"> Postre
+            <br>
+
+            <label for="ingredientes">Ingredientes: </label>
+            <select multiple style="height: 150px" name="ingredientes[]">
+                <optgroup label="Carne">
+                    <option value="pollo">Pollo</option>
+                    <option value="ternera">Ternera</option>
+                </optgroup>
+                <optgroup label="Pescado">
+                    <option value="salmon">Salmon</option>
+                    <option value="atun">Atùn</option>
+                </optgroup>
+                <optgroup label="Verdura">
+                    <option value="tomate">Tomate</option>
+                    <option value="brocoli">Brocoli</option>
+                </optgroup>
+                <optgroup label="Fruta">
+                    <option value="manzana">Manzana</option>
+                    <option value="pera">Pera</option>
+                </optgroup>
+            </select>
+            <br>
+
+            <label for="horas">Horas: </label>
+            <input name="horas" type="radio" value="0"> 0h
+            <input name="horas" type="radio" value="1"> 1h
+            <input name="horas" type="radio" value="2"> 2h
+            <br>
+
+            <label for="minutos">Minutos: </label>
+            <input name="minutos" type="radio" value="0"> 0m
+            <input name="minutos" type="radio" value="15"> 15m
+            <input name="minutos" type="radio" value="30"> 30m
+            <input name="minutos" type="radio" value="45"> 45m
+            <br>
+
+            <label for="foto">Foto (opcional): </label>
+            <br>
+            <input type="file" name="foto"/>
+            <br> 
+            <br>
+
+            <button type="submit">Enviar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
